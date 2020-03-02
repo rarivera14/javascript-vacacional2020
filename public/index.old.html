@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1>MagicKarpUsedFly!</h1>
+    <div class = "principal">
+    <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut iure at. Quisquam repellat sequi doloribus error praesentium eius magnam quos pariatur officiis ipsum facere autem, libero maxime. Rerum, ipsam?</p>
+    </div>
+    <a href="https://www.ecudevs.com">This is a link"</a>    
+    <div style="background-color:aquamarine;">
+    <img src = "https://pbs.twimg.com/profile_images/957322668365119488/6zwDyhE2_400x400.jpg" alt="FFFFFFFFFFFFFFFFFFFFF">
+
+    <ul id="lista" class="center">
+        <li>Sonic</li>
+        <li>Shara Ishvalda</li>
+        <li>Mario</li>
+    </ul>
+
+    </div>
+    
+    <button onclick="console.log('Bird Up')">Holi</button>
+    <script src = "./Js/index.js"></script>
+    <script>
+        // let user = 'Zicks';
+        // console.log(user);
+        // user = 123;
+        // console.log(user);   
+        // console.log('Hola mundo!');
+
+        // const URL = 'ecudevs.com';
+        // URL = '';
+
+        // let x = 100;
+        // let y = 0.9;
+        // let z = '100';
+        
+        // let suma = x + y +z;
+        // console.log(suma);
+
+        // let cont = 0;
+
+        // for (i = 0; i<3; i++){
+        //     console.log(cont++);
+        //     console.log(cont);
+        //     console.log(--cont);
+        // }
+
+        // let acum = 0;
+
+        // for(i = 0; i<3; i++){
+        //     acum += 2;
+        //     console.log(acum);
+        // }
+
+        // let permisoPapa = true;
+        // let permisoMama = false;
+
+        // // let salir = permisoPapa || permisoMama;
+
+        // if(permisoPapa && permisoMama){
+        //     console.log('Tenemos permiso para salir');
+        //}
+
+        // let i = 1;
+        // while(i<=100){
+        //     console.log(i);
+        //     i++;
+        // // }
+        // do{
+        //     console.log(i);
+        //     i++;
+        // }while(i<=100)
+
+        // for (let i = 1; i<=100; i++){
+        //     if (i % 2 ==0){
+        //         console.log(i);
+        //     }
+        // }
+
+        // let i = 0;
+        // while(i<100){
+        //     if (i % 2 ==0){
+        //         console.log(i);
+        //     }
+        //     i++;
+        // }
+
+        // let i=0;
+        // do{
+        //     console.log(i)
+        //     i+=2;   
+        // }while(i<=100);
+
+        // let c = '';
+        // for ( let i = 1; i<=30; i++){
+        //     for ( let n = 0; n<i;n++){
+        //         c+=i;
+        //     }
+        //     console.log(c);
+        //     c = '';
+        // }
+
+        // function potencia(num,pot = 2){
+        //     return num ** pot;
+        // }
+
+        // console.log(potencia(4));
+
+        // function cuadradoPrint(num){
+        //     console.log(num*num);
+        // }
+
+        // cuadradoPrint(2);
+
+        // let persona = {
+//             nombre: ['Bob', 'Smith'],
+//             edad: 32,
+//             genero: 'masculino',
+//             intereses: ['música', 'esquí'],
+//             bio: function() {
+//                 alert(
+//                     this.nombre[0] +
+//                     '' +
+//                     this.nombre[1] +
+//                     ' tiene ' +
+//                     this.edad +
+//                     ' años. Le gusta ' +
+//                     this.intereses[0] +
+//                     ' y ' +
+//                     this.intereses[1] +
+//                     '.'
+//                 );
+//             },
+//             saludo: function() {
+//                 alert('Hola, Soy ' + this.nombre[0] + '. ');
+//             },
+//         };
+
+//         persona.saludo('Que mas soy');
+
+        let car1 = 'Sabb';
+        let car2 = 'Volvo';
+        let car3 = 'BMW';
+        
+        let cars = [car1,car2,car3];
+
+        cars[4] = 'chevy';
+        let newLength = cars.push('Ford');
+        console.log(newLength);
+
+        cars.forEach(function (elemento, indice, array){
+            console.log(elemento, indice);
+        });
+
+        console.log('------------------------');
+
+        cars.pop();
+        cars.forEach(function (elemento, indice, array){
+            console.log(elemento, indice);
+        });
+
+        console.log('------------------------');
+        
+        cars.shift();
+        cars.unshift('KIA','Nissan','Tesla');
+
+        cars.forEach(function (elemento, indice, array){
+            console.log(elemento, indice);
+        });
+
+        console.log('------------------------');
+
+        cars.splice(2,1);
+        cars.forEach(function (elemento, indice, array){
+            console.log(elemento, indice);
+        });
+
+        // let ind = cars.indexOf('Ford');
+        // console.log(ind);
+        
+        // let filtro =cars.filter( function(elemento, indice){
+        //     return elemento.indexOf('o') != -1;
+        // });
+
+        // console.log('Filtro:');       
+        // filtro.forEach(function (elemento, indice, array){
+        //     console.log(elemento, indice);
+        // });
+
+        // let elementA = cars.find( function(elemento, indice){
+        //     return elemento.indexOf('A') != -1;
+        // });
+
+        // console.log(elementA);
+
+    </script>
+</body>
+</html>

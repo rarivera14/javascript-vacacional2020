@@ -1,0 +1,32 @@
+*{
+    text-align: right;
+    color: chartreuse;
+}
+h1{
+    font-family: impact;
+    font-size: 20px;
+    color: crimson;
+}
+p{
+    font-family : Arial;
+    font-size: 15px;
+}
+
+#lista{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color:indigo;
+}
+
+.center{
+    text-align: center;
+}
+
+p.center{
+    font-weight: bold;
+}
+
+div.principal p.center{
+    color: chocolate;
+}
+
